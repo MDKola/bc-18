@@ -3,14 +3,8 @@ import unittest
 from binary import BinarySearch
 
 
-# ============================================================================
-# unit tests TestCase implementation
-# ============================================================================
-class ListComprehensionTest(unittest.TestCase):
 
-    """Binary Search to traverse an ordered list, effectively
-       Populate the arrays with valid content
-    """
+class ListComprehensionTest(unittest.TestCase):
 
     def setUp(self):
         self.one_to_twenty = BinarySearch(20, 1)
@@ -74,10 +68,7 @@ class ListComprehensionTest(unittest.TestCase):
 
 class BinarySearchTest(unittest.TestCase):
 
-    """Get the index of the item with an expected number of loops in\
-     array [1, 2 . . . 20]
-       Returns a dictionary containing {count: value, index: value}
-    """
+   
 
     def setUp(self):
         self.one_to_twenty = BinarySearch(20, 1)
@@ -170,5 +161,3 @@ class BinarySearchTest(unittest.TestCase):
             msg='should return {count: 3, index: -1} for 10000'
         )
 
-if __name__ == '__main__':
-    unittest.main()
