@@ -1,0 +1,104 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Domine", Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+	height: 74px;
+	background-color: #3C7BBE;
+	
+}
+header img{
+	margin-top: 12px;
+	margin-left: 50px;
+	float: left;
+}
+header nav ul {
+	float: left;
+	padding-top: 10px;
+	
+}
+header nav ul li{
+	display: inline;
+	text-decoration: none;
+	color: white;
+	padding-right: 25px;
+	padding-left: 0;
+	font-size: 18px;
+
+}
+.search {
+	height: 40px;
+	padding-top: 40px;
+}
+.search input {
+	width: 75%;
+	height: 20px;
+	margin-left: 5%;
+}
+.search button {
+	height: 25px;
+	background-color: #0b5394;
+	border: none;
+	border-radius: 2px;
+	width: 85px;
+	color: white;
+}
+.topAd {
+	padding-top: 30px;
+}
+.topAd img{
+	margin-left: 15%;
+	padding-bottom: 40px;
+}
+.topStory {
+	height: 600px;
+	width: 100%;
+	background-color: #373A3C;
+	
+}
+.topStory iframe {
+	margin-left: 2%;
+	padding-top: 70px;
+	float: left;
+	padding-right: 30px;
+}
+.headlines {
+	padding-top: 50px;
+	float: left;
+	width: 40%;
+	color: white;
+}
+.headlines p {
+	font-size: 14px;
+}
+.trending {
+	background-color: #0B4A8C;
+	color: white;
+	height: 300px;
+	width: 100%;
+
+}
+.trending h3 {
+	margin-top: 0px;
+	padding-top: 40px;
+	padding-left: 20px;
+
+}
+
+.trend{
+	float: left;
+	padding-top: 20px;
+	float: left;
+	width: 14%;
+	margin-left: 20px;
+	padding-right: 1px;
+	
+}
+.mainContent {
+	width: 70%;
+}
+
+
+
