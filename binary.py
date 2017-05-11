@@ -1,33 +1,47 @@
 class BinarySearch(list):
-	#BinarySearch inherits from builtin list class
-	def __init__(self,length,step):
-		#__init__ takes in takes length and step as arguements
-		super(BinarySearch,self).__init__()
-		#super class initialized
-		for item in range(1,length+1):
-			self.append(item*step)
+    def __init__(self, length, step):
+        super(BinarySearch, self).__init__()
 
-			self.length=len(self)
+        
+        for i in range(1, length+1):
+            self.append(i * step)
 
-	def search(self,val):
-		#performs a binary search to locate value
-		first = 0
-		last = len(self) - 1
-		value_index = 0
-		found = False
+        
+        self.length = len(self)
 
-		counter = 0
-		#counter initialized to zero
+    def search(self, val):
+        first = 0
+        last = len(self) - 1
+        value_index = 0
+        found = False
 
-		#checking position of value
-		if val==self[first]:
-			value_index = first
-			found = True
-		elif val == self[last]:
-			value_index = last
-			found = True
+    
+        count = 0
 
-		#making sure val is in list
-		if val not in self:
-			found = True
-			value_index = -1
+        
+        if val == self[first]:
+            value_index = first
+            found = True
+        elif val == self[last]:
+            value_index = last
+            found = True
+
+        
+        if val not in self:
+            found = True
+            value_index = -1
+
+         
+        while first <= last and not found:
+            mid = (first + last) // 2
+            if self[mid] == val:
+                found = True
+                value_index = mid
+            else:
+                count += 1 
+                if val < self[mid]:
+                    last = mid - 1
+                else:
+                    first = mid + 1
+
+        return {'count': count, 'index': value_index}
